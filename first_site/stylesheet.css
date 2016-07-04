@@ -3,7 +3,8 @@ header {
 	 text-align: center;
      background: url("Russia.jpg");
      background-size: cover;
-     color: red;
+     color: white;
+
 }
 
 a {
@@ -12,6 +13,13 @@ a {
 
 h1 {
 	font-size: 8em;
+	margin: 60px 0 0 0;
+	font-family: 'Ruthie', cursive;
+}
+
+h2 {
+	font-size: 4.5em;
+	font-family: 'Ruthie', cursive;
 }
 
 img {
@@ -26,18 +34,19 @@ body {
 	background-size: cover;
 	background-position: center;
 	color: white;
-	font-family: Helvetica, Arial;
+	font-family: Helvetica, sans-serif;
 	background-color: black; 
+	margin: 0 auto;
 }
 
-ul {
+ul.nav {
 	padding: 10px;
 	background: rgba(0,0,0,0.5);
 }
 
 li {
 	display: inline;
-	padding: 0px 10px 0px 10px;
+	padding: 0px 35px 0px 35px;
 }
 
 article {
@@ -46,34 +55,33 @@ article {
 	margin: 0 auto;
 }
 
-@media (max-width: 95em) {
-	body {
-		background: black;
-	}
-
-	h1 {
-		font-size: 36px;
-    }
-    li {
-    	display: block;
-        padding: 5px;
-    }
-}
-
-p{
-	font-size: 3em;
+p.foodpics {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
 }
 
 div {
-	height: 10em;
-	width: 10em;
-	border-color: black;
-	border-style: solid;
-	border-width: 0.1em;
-	border-radius: 3em;
-	margin: auto;
-	text-align: center;
-	line-height: 7em;
+	height: 200px;
+	background-size: cover;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border-radius: 12px;
+	max-width: 600px;
 }
 
 input {
@@ -89,4 +97,73 @@ input[type="submit"] {
 	color: black;
 	border-radius: 8em;
 
+}
+
+li.thispage {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+li.thispage a {
+	color: red;
+}
+
+ul.nav li a {
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+ul.nav li a:hover, a:active {
+	background-color: black;
+	color: blue;
+	font-weight: bold;
+	font-size: 1.3em;
+
+}
+
+
+small {
+  opacity: 0;
+}
+.first{
+  background-image: url("./food/gyoza.jpg");
+  background-position: center;
+}
+.second{
+  background-image: url("./food/tofu_fish_n_chips.jpg");
+  background-position: center;
+}
+.dessert{
+  background-image: url("./food/pannacota.jpg");
+  background-position: center;
+}
+.cuisine {
+  float: right;
+}
+.show-description p {
+  height: 150px;
+  }
+.show-description small {
+  opacity: 1;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
 }

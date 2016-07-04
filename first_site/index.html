@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script type="text/javascript" src="jquery-3.0.0.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		<title>Aarti's Website</title>
+		<title>Vegan Panda</title>
 	</head>
 
 
 	<body>
 		<header>
 			<img src="pic.jpg">
-			<h1>Aarti's Blog</h1>
-			<ul>
+			<h1>Vegan Panda</h1>
+			<ul class="nav">
+				<li class='thispage'><a href="index.html">Home</a></li>
 				<li><a href="about_me.html">About Me</a></li>
-				<li><a href="conact_me.html">Contact Me</a></li>
-				<li><a href=">other.html">Other</a></li>
+				<li><a href="recipes.html">Recipes</a></li>
+				<li><a href="eating_out.html">Eating Out</a></li>
+				<li><a href="games-quiz.html">Games/Quiz</a></li>
+				<li><a href="contact_me.html">Contact</a></li>
+				<li><a href="other.html">Other</a></li>
 			</ul>
 		</header>
 
+		<h2>Recipes</h2>
+		<div class="first">
+			<p class="foodpics">Gyoza <span class="cuisine">Japanese</span><br /> <small>Difficulty Level: Easy<br />Pan-fried vegan gyoza filled with mushrooms, noodles, napa cabbage, spring onions, chinese chives etc. served with homemade chilli oil.</small></p>
+		</div>
+
+		<div class="second">
+			<p class="foodpics">Beer-Battered Tofu Fish and Chips <span class="cuisine">British</span><br /> <small>Difficulty Level: Intermediate<br /> Beer-battered seaweed wrapped tofu with twice-cooked chips, mushy peas and tartar sauce. </small></p>
+		</div>
+
+		<div class="dessert">
+			<p class="foodpics">Vanilla and Coconut Panna Cotta<span class="cuisine">Italian</span><br /> <small>Difficulty Level: Expert<br /> Vanilla bean and coconut panna cotta with homemade raspberry ice cream, raspberry coulis and a Sable crumb.</small></p>
+		</div>
+
+
+
+
 		<article>
-			<h2>Contact me</h2>
+			<h2>Newsletter</h2>
 			<p>...</p>
 
 			<input type="email" placeholder="Your Email"/>
@@ -30,7 +52,12 @@
 			<p>...</p>
 			<button>Like</button>
 		</article>
-		
+		 
+ 		 <script type="text/javascript">
+ 		 $('div').on('click', function() {
+ 		 	$(this).toggleClass('show-description');
+ 		 	});
+ 		 </script>
 
 		
 	</body>
